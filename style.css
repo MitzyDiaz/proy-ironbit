@@ -72,22 +72,25 @@ html {
 }
 
 #formp {
-    width: 75%
+    width: 70%
 }
 
+#formp input {
+    padding: 0.5rem;
+    width: 60%;
+    margin-left: 20%;
+    font-size: 0.7rem;
+    border-radius: 6px;
+    border: none;
+    background-color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 #formb{
 	width: 5%;
 	float: right;
 }
 
-#formp input {
-    padding: 0.5rem;
-    width: 71%;
-    font-size: 0.7rem;
-    border-radius: 6px;
-    border: none;
-    background-color: white;
-}
 
 
 /**********BOTON ADD*************/
@@ -108,10 +111,14 @@ html {
     outline: none;
 }
 
-.todo-btn:hover,
-.todo-remove-btn:hover {
+.todo-btn:hover{
     background-color: white;
     border-radius: 99px;
+}
+.todo-remove-btn:hover{
+    background-color: white;
+    border-radius: 6px;
+
 }
 
 .todo-remove-btn {
@@ -146,7 +153,7 @@ html {
 /***********LISTA***************/
 
 .encab {
-    width: 80%;
+    width: 70%;
     height: 3rem;
     margin: 0 auto;
     border: 1.5px solid #fff;
@@ -156,7 +163,7 @@ html {
 }
 
 .todo-container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: center;

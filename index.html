@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO DO LIST</title>
-    <link rel="shortcut icon" href="/images/specialicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
@@ -25,13 +25,6 @@
             <form id="formp">
                 <input type="text" class="todo-input" placeholder=":)">
                 <button class="todo-btn" type="submit"><img src="img/add.svg"></button>
-                <div class="select">
-                    <select name="todos" class="filter-todo">
-						<option value="all">All</option>
-					<option value="completed">Seleccionado</option>
-					<option value="uncompleted">No Seleccionado</option>
-				</select>
-                </div>
             </form>
         </div>
         <div class="encab">
@@ -41,9 +34,10 @@
         </div>
         <div class="todo-container">
             <ul class="todo-list">
-
             </ul>
-            
+        </div>
+        <div class="mensaje">
+        	aqui hay algo
         </div>
     </div>
     <script src="script.js"></script>
