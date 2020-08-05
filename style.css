@@ -1,0 +1,248 @@
+/**********GENERAL************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+#bg {
+    color: #fff;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(150deg, #023af1, #009bc2, #2acdff);
+    background-size: 400% 300%;
+    animation: BgGradient 10s ease infinite;
+}
+
+@keyframes BgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+/**********FORM*************/
+#header-img img {
+    width: 5.5rem;
+}
+
+#header-img,
+#header-text {
+    min-height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#header-text {
+    min-height: 0rem;
+}
+
+#header-text h1 {
+    font-size: 20px;
+}
+
+#formp {
+    width: 75%
+}
+
+#formb{
+	width: 5%;
+	float: right;
+}
+
+#formp input {
+    padding: 0.5rem;
+    width: 71%;
+    font-size: 0.7rem;
+    border-radius: 6px;
+    border: none;
+    background-color: white;
+}
+
+
+/**********BOTON ADD*************/
+
+.todo-btn,
+.todo-remove-btn {
+    padding: 0;
+    width: 2rem;
+    background: transparent;
+    border-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.todo-btn:focus,
+.todo-remove-btn:focus {
+    outline: none;
+}
+
+.todo-btn:hover,
+.todo-remove-btn:hover {
+    background-color: white;
+    border-radius: 99px;
+}
+
+.todo-remove-btn {
+    float: right;
+}
+
+.complete-btn,
+.trash-btn {
+    width: 2rem;
+    background: transparent;
+    border-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.trash-btn:hover {
+    background-color: rgb(255, 103, 103);
+    border-radius: 99px;
+}
+
+.complete-btn:hover {
+    background-color: rgb(103, 255, 123);
+    border-radius: 99px;
+}
+
+.complete-btn:focus,
+.trash-btn:focus {
+    outline: none;
+}
+
+/***********LISTA***************/
+
+.encab {
+    width: 80%;
+    height: 3rem;
+    margin: 0 auto;
+    border: 1.5px solid #fff;
+    padding: 0.5rem;
+    border-radius: 6px 6px 0px 0px;
+    background: rgba(0, 123, 255, .5);
+}
+
+.todo-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 6px 6px;
+    background: white;
+}
+
+.todo-list {
+    width: 100%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: #fff;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    border-bottom: 1px solid rgba(0, 123, 255, .5);
+}
+
+.todo li {
+    flex: 1;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+#add,
+#remove {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/*ANIMACION*/
+
+.fall {
+    transform: translateY(8rem) rotateZ(10deg);
+    opacity: 0;
+}
+
+
+/*******SELECTS*******/
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    overflow: hidden;
+    padding: 1rem;
+    display: inline-table;
+}
+
+select {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: rgb(41, 151, 255);
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    border-radius: 0px 6px 6px 0px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: white;
+    color: rgb(41, 151, 255);
+}
