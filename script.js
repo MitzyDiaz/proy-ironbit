@@ -4,6 +4,7 @@ const todoBtn = document.querySelector('.todo-btn');
 const todoList = document.querySelector('.todo-list');
 const todoRBtn = document.querySelector('.todo-remove-btn');
 const mensaje = document.querySelector('.mensaje');
+const todoContainer = document.querySelector('.todo-container');
 
 //EVENTOS
 todoBtn.addEventListener('click', addTodo);
@@ -14,9 +15,7 @@ todoRBtn.addEventListener('click', deleteAll);
 
 
 if(todoList.childElementCount < 1){
-	//alert("No hay Todo's Tomate un Café");
-	//mensaje.style.display="none";
-	mensaje.style.color="red";
+	mensaje.style.color="blue";
 }
 
 
@@ -24,6 +23,8 @@ if(todoList.childElementCount < 1){
 function addTodo(event) {
     //para que no haga submit el boton
     event.preventDefault();
+    mensaje.style.display="none";
+    todoContainer.style.borderRadius="0px 0px 6px 6px";
     //CREAR DIV
     const todoDiv = document.createElement('div');
     todoDiv.classList.add('todo');

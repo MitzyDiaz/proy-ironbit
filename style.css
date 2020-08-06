@@ -168,7 +168,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0px 0px 6px 6px;
+    /*border-radius: 0px 0px 6px 6px;*/
     background: white;
 }
 
@@ -252,4 +252,11 @@ select {
 .select:hover::after {
     background: white;
     color: rgb(41, 151, 255);
+}
+
+
+.mensaje{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
 }
