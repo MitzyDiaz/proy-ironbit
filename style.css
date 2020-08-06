@@ -41,7 +41,7 @@ html {
 }
 
 
-/**********FORM*************/
+/**********HEADER*************/
 #header-img img {
     width: 5.5rem;
 }
@@ -53,6 +53,14 @@ html {
     justify-content: center;
     align-items: center;
 }
+#header-text {
+    min-height: 0rem;
+}
+
+#header-text h1 {
+    font-size: 20px;
+}
+/**********FORMS*************/
 
 #form {
     width: 100%;
@@ -61,15 +69,6 @@ html {
     align-items: center;
 }
 
-
-
-#header-text {
-    min-height: 0rem;
-}
-
-#header-text h1 {
-    font-size: 20px;
-}
 
 #formp {
     width: 70%
@@ -125,7 +124,6 @@ html {
     float: right;
 }
 
-.complete-btn,
 .trash-btn {
     width: 2rem;
     background: transparent;
@@ -140,12 +138,6 @@ html {
     border-radius: 99px;
 }
 
-.complete-btn:hover {
-    background-color: rgb(103, 255, 123);
-    border-radius: 99px;
-}
-
-.complete-btn:focus,
 .trash-btn:focus {
     outline: none;
 }
