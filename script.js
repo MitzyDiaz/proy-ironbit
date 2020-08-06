@@ -12,8 +12,6 @@ todoList.addEventListener('click', deleteCheck);
 todoRBtn.addEventListener('click', deleteAll);
 
 
-
-
 if(todoList.childElementCount < 1){
 	mensaje.style.color="blue";
 }
@@ -21,14 +19,14 @@ if(todoList.childElementCount < 1){
 
 //FUNCIONES
 function addTodo(event) {
-    //para que no haga submit el boton
+    //no submit
     event.preventDefault();
     mensaje.style.display="none";
     todoContainer.style.borderRadius="0px 0px 6px 6px";
     //CREAR DIV
     const todoDiv = document.createElement('div');
     todoDiv.classList.add('todo');
-    //CREAR <li>
+    //CREAR <LI>
     const newTodo = document.createElement('li');
     newTodo.innerText = todoInput.value;
     newTodo.classList.add('todo-item');

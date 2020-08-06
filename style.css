@@ -214,46 +214,6 @@ html {
 }
 
 
-/*******SELECTS*******/
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    outline: none;
-    border: none;
-}
-
-.select {
-    margin: 1rem;
-    overflow: hidden;
-    padding: 1rem;
-    display: inline-table;
-}
-
-select {
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    padding: 0.5rem;
-    font-size: 0.7rem;
-    border-radius: 6px 0px 0px 6px;
-}
-
-.select::after {
-    content: "\25BC";
-    position: absolute;
-    background: rgb(41, 151, 255);
-    padding: 0.5rem;
-    font-size: 0.7rem;
-    border-radius: 0px 6px 6px 0px;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
-.select:hover::after {
-    background: white;
-    color: rgb(41, 151, 255);
-}
-
 
 .mensaje{
     width: 70%;
