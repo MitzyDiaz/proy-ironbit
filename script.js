@@ -54,11 +54,6 @@ function deleteCheck(e) {
         });
     }
 
-    //seleccionar
-    if (item.classList[0] === 'complete-btn') {
-        const todo = item.parentElement;
-        todo.classList.toggle("completed");
-    }
 }
 
 
